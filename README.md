@@ -19,18 +19,8 @@
 
 <br />
 
-<a
-href="https://solved.ac/profile/oksk6681"
-target="\_blank"
-rel="noopener noreferrer"
-
->
-
-    <img
-      src="http://mazassumnida.wtf/api/v2/generate_badge?boj=oksk6681"
-      alt="Solved.ac Profile Badge"
-    />
-
+  <a href="https://solved.ac/profile/oksk6681" target="_blank">
+    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=oksk6681" alt="Solved.ac Profile" />
   </a>
 
 <br>
