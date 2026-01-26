@@ -4,24 +4,31 @@
 
 ## ✨ About Me
 
-<div style="display: flex; gap: 16px; align-items: center;">
+<p align="center">
   <img
     src="https://github-readme-stats.vercel.app/api?username=pangil5634&show_icons=true&count_private=true&theme=onedark&hide_border=true&hide=issues,contribs&bg_color=00000000"
+    width="48%"
     alt="GitHub Stats"
   />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=pangil5634&layout=compact&hide_border=true&theme=onedark&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php"
+    width="40%"
+    alt="Top Languages"
+  />
+</p>
 
-<img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=pangil5634&layout=compact&hide_border=true&theme=onedark&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php"
-  alt="Top Languages"
-/>
-
-</div>
 
 <br />
 
-  <a href="https://solved.ac/profile/oksk6681" target="_blank">
-    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=oksk6681" alt="Solved.ac Profile" />
+<p align="center">
+  <a href="https://solved.ac/profile/oksk6681" target="_blank" rel="noopener noreferrer">
+    <img
+      src="http://mazassumnida.wtf/api/v2/generate_badge?boj=oksk6681"
+      alt="Solved.ac Profile"
+    />
   </a>
+</p>
+
 
 <br>
 <br>
