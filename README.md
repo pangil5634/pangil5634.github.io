@@ -1,39 +1,3 @@
-<!-- 👋 소개 메시지 (Typing 애니메이션) -->
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=80ed99&size=25&duration=3000&pause=1000&center=true&vCenter=true&width=1000&lines=I'm+a+frontend+developer+focused+on+enhancing+user+experience+through+UI%2FUX+design.)](https://git.io/typing-svg)
-
-## ✨ About Me
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=pangil5634&show_icons=true&count_private=true&theme=onedark&hide_border=true&hide=issues,contribs&bg_color=00000000"
-    width="48%"
-    alt="GitHub Stats"
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=pangil5634&layout=compact&hide_border=true&theme=onedark&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php"
-    width="40%"
-    alt="Top Languages"
-  />
-</p>
-
-
-<br />
-
-<p align="center">
-  <a href="https://solved.ac/profile/oksk6681" target="_blank" rel="noopener noreferrer">
-    <img
-      src="http://mazassumnida.wtf/api/v2/generate_badge?boj=oksk6681"
-      alt="Solved.ac Profile"
-    />
-  </a>
-</p>
-
-
-<br>
-<br>
-<br>
-
 ## 💻 Tech Stack
 
 | Category            | Technologies                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -48,19 +12,6 @@
 | **Collaboration**   | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack) ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion)                                                                                                                                                                                                                                                                                                         |
 | **Dev Environment** | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![zsh](https://img.shields.io/badge/zsh-gray?style=for-the-badge&logo=zsh)                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-<br>
-<br>
-<br>
-
-## 👨‍👩‍👧‍👦 Team Experience
-
-- **CRA (Computer Research Association)**
-- **비타500-2023 Bizflow Team**
-- **PARD 2기**
-- **PARD 3기 웹파트 부파트장**
-- **PARD 4기 웹파트 파트장**
-- **인사이트 랩실**
-- **우아한테크코스 8기 프리코스**
 
 <br>
 <br>
@@ -84,9 +35,14 @@
 <br>
 <br>
 
-## 🏆 Awards
+## 🧑🏻‍💻 Experience
 
-- 🥉 [2020 C Contest - 장려상](https://github.com/pangil5634/pangil5634/wiki/%5BAwards%5D-2020-C-Contest)
-- 🥈 [2023 bizflow M - pre contest - 우수상](https://github.com/pangil5634/pangil5634/wiki/%5BAwards%5D-bizflow-M-%E2%80%90-pre-contest)
-- 🥈 [2023 bizflow M contest - 우수상](https://user-images.githubusercontent.com/54162245/302922643-851d0268-ae1d-47e7-9905-349f86098e06.jpeg)
-- 🥇 [PARD 2기 롱커톤 - 대상](https://user-images.githubusercontent.com/54162245/302921160-c46836c4-e134-4203-b0fe-214d852c3ff4.jpeg)
+### 🎓 Education
+- **한동대학교 전산전자공학부** <i>2020.02 – 2026.02</i>
+- **경기자동차과학고등학교 자동차IT학과** <i>2017.03 – 2020.02</i>
+
+### 🧩 Activities & Clubs
+- **인사이트랩 (한동대학교 전산전자공학부 연구실)** <i>2024.06 ~ 2025.06</i>
+- **PARD (IT 협업 동아리)** <i>2023.09 – 2025.01</i>
+- **CRA (한동대학교 전산동아리)** <i>2020.03 – 2026.02</i>
+- **한동대학교 글로벌리더십학부 학생회 부대표** <i>2020.04 – 2021.03</i>
