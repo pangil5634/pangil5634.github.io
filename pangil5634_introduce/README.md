@@ -10,6 +10,7 @@ Astro + TypeScript + MDX 기반 포트폴리오/기술블로그입니다.
 
 ## Content Admin (Decap CMS)
 - 접속 경로: `/admin`
+- 작성자 진입 경로(별칭): `/write` (`/admin`으로 즉시 이동)
 - 설정 파일: `public/admin/config.yml`
 
 ### 동작 방식

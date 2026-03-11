@@ -1,0 +1,20 @@
+---
+const target = "/admin/";
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Write</title>
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <link rel="canonical" href={`https://pangil5634.github.io${target}`} />
+  </head>
+  <body>
+    <p>문서 작성 화면으로 이동 중입니다. <a href={target}>바로가기</a></p>
+    <script>
+      window.location.replace("/admin/");
+    </script>
+  </body>
+</html>
