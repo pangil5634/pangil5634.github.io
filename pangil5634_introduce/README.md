@@ -10,8 +10,20 @@ Astro + TypeScript + MDX 기반 포트폴리오/기술블로그입니다.
 
 ## Content Admin (Decap CMS)
 - 접속 경로: `/admin`
-- 작성자 진입 경로(별칭): `/write` (`/admin`으로 즉시 이동)
 - 설정 파일: `public/admin/config.yml`
+
+## Write Page (Custom)
+- 접속 경로: `/write`
+- 목적: 브라우저에서 포스트를 작성하고 `src/content/posts/*.mdx`를 GitHub에 직접 커밋
+- 저장 방식: GitHub Contents API (`pangil5634/pangil5634`, `main`)
+
+### 준비물
+- GitHub Personal Access Token (classic 권장)
+- 필요 권한: `repo` (private 저장소가 아니라면 최소 `public_repo`)
+
+### 주의
+- 토큰은 브라우저 `localStorage`에 저장됩니다.
+- 공용 PC에서는 사용 후 토큰을 지우거나 브라우저 데이터를 삭제하세요.
 
 ### 동작 방식
 Decap CMS는 GitHub 저장소에 `src/content/posts`, `src/content/projects`의 MDX 파일을 직접 커밋합니다.
