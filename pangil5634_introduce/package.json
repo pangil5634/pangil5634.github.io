@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "cms:proxy": "decap-server",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.1",
