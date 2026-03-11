@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pangil5634.github.io/sitemap-index.xml
