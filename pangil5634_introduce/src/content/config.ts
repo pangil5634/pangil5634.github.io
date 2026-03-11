@@ -1,11 +1,18 @@
 import { defineCollection, z } from "astro:content";
 
+const dateString = z.union([z.string(), z.date()]).transform((value) => {
+  if (value instanceof Date) {
+    return value.toISOString().slice(0, 10);
+  }
+  return value;
+});
+
 const posts = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    publishedAt: z.string(),
-    updatedAt: z.string().optional(),
+    publishedAt: dateString,
+    updatedAt: dateString.optional(),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false)
   })
