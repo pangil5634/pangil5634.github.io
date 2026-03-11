@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects");
+  return projects.map((project) => ({ params: { slug: project.slug } }));
+}
+
+const projects = await getCollection("projects");
+const project = projects.find((item) => item.slug === Astro.params.slug);
+if (!project) {
+  return Astro.redirect("/projects");
+}
+const { Content } = await project.render();
+---
+
+<BaseLayout title={`${project.data.title} | Projects`} description={project.data.summary}>
+  <article class="section prose">
+    <p class="muted">{project.data.period} · {project.data.role}</p>
+    <h1>{project.data.title}</h1>
+    <p>{project.data.summary}</p>
+    <p class="muted">Stack: {project.data.stack.join(", ")}</p>
+    <Content />
+    <p>
+      {project.data.liveUrl && <a href={project.data.liveUrl}>Live</a>}
+      {project.data.repoUrl && <> · <a href={project.data.repoUrl}>Repo</a></>}
+    </p>
+  </article>
+</BaseLayout>

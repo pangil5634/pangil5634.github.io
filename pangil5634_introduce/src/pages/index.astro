@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroMotion from "../components/HeroMotion";
+
+const projects = (await getCollection("projects"))
+  .filter((p) => p.data.featured)
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title="김광일 | Software Engineer Portfolio"
+  description="포트폴리오와 기술 블로그를 함께 운영하는 김광일의 개인 사이트"
+>
+  <section class="hero section">
+    <p class="muted">Portfolio + Blog</p>
+    <h1>디자인과 성능을 같이 챙기는<br />Software Engineer 김광일</h1>
+    <p class="subtitle">SEO 친화적인 정보 구조 위에 제품 감도를 높이는 인터랙션을 설계하고 구현합니다.</p>
+    <nav class="hero-nav">
+      <a href="/projects">projects</a>
+      <a href="/posts">posts</a>
+      <a href="/about">about</a>
+    </nav>
+    <HeroMotion client:visible />
+  </section>
+
+  <section class="section" aria-labelledby="featured-title">
+    <div class="section-head">
+      <p>Featured</p>
+      <h2 id="featured-title">대표 프로젝트</h2>
+    </div>
+    <div class="grid">
+      {projects.map((project) => (
+        <a class="card" href={`/projects/${project.slug}`} data-tilt data-glow>
+          <h3>{project.data.title}</h3>
+          <p>{project.data.summary}</p>
+          <p class="muted">{project.data.period}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

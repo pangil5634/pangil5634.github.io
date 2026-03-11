@@ -1,0 +1,58 @@
+backend:
+  name: github
+  repo: pangil5634/pangil5634
+  branch: main
+  base_url: https://decap-oauth-proxy-iagi.onrender.com
+  auth_endpoint: auth
+
+site_url: https://pangil5634.github.io
+display_url: https://pangil5634.github.io
+logo_url: /admin/favicon.svg
+
+publish_mode: simple
+
+media_folder: "pangil5634_introduce/public/uploads"
+public_folder: "/uploads"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "pangil5634_introduce/src/content/posts"
+    create: true
+    identifier_field: "slug"
+    slug: "{{fields.slug}}"
+    extension: "mdx"
+    format: "frontmatter"
+    fields:
+      - { label: "Slug (영문-하이픈)", name: "slug", widget: "string", hint: "예: astro-seo-guide" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Published At", name: "publishedAt", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+      - { label: "Updated At", name: "updatedAt", widget: "datetime", required: false, format: "YYYY-MM-DD", time_format: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "projects"
+    label: "Projects"
+    folder: "pangil5634_introduce/src/content/projects"
+    create: true
+    identifier_field: "slug"
+    slug: "{{fields.slug}}"
+    extension: "mdx"
+    format: "frontmatter"
+    fields:
+      - { label: "Slug (영문-하이픈)", name: "slug", widget: "string", hint: "예: checky" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Period", name: "period", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Stack", name: "stack", widget: "list", default: [] }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Live URL", name: "liveUrl", widget: "string", required: false }
+      - { label: "Repo URL", name: "repoUrl", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

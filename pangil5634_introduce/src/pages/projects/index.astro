@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const projects = (await getCollection("projects")).sort((a, b) => Number(b.data.featured) - Number(a.data.featured));
+---
+
+<BaseLayout title="Projects | 김광일" description="프로젝트 목록">
+  <section class="section">
+    <div class="section-head">
+      <p>Projects</p>
+      <h1>프로젝트</h1>
+    </div>
+    <div class="grid">
+      {projects.map((project) => (
+        <a class="card" href={`/projects/${project.slug}`} data-tilt data-glow>
+          <h3>{project.data.title}</h3>
+          <p>{project.data.summary}</p>
+          <p class="muted">{project.data.stack.join(" · ")}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
