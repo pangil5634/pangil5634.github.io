@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: pangil5634/pangil5634
+  repo: pangil5634/pangil5634.github.io
   branch: main
   base_url: https://decap-oauth-proxy-iagi.onrender.com
   auth_endpoint: auth
